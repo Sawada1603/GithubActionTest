@@ -1,0 +1,11 @@
+name: enviroment
+on: [push]
+jobs:
+  enviroment-print:
+    runs-on: ubuntu-latest
+    env:
+        ACTOR_NAME: ${{ github.actor }}
+    steps:
+      - run: echo "ACTOR_NAME: ${ACTOR_NAME}"
+      
+      
