@@ -1,4 +1,4 @@
-name: enviroment
+name: Enviroment
 on: [push]
 jobs:
   enviroment-print:
@@ -7,6 +7,6 @@ jobs:
         ACTOR_NAME: ${{ github.actor }}
     steps:
       - name: Print actor name
-        run: echo "ACTOR_NAME: ${ACTOR_NAME}"
+        run: echo "ACTOR_NAME: $ACTOR_NAME"
       
       
