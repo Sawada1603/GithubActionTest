@@ -6,6 +6,7 @@ jobs:
     env:
         ACTOR_NAME: ${{ github.actor }}
     steps:
-      - run: echo "ACTOR_NAME: ${ACTOR_NAME}"
+      - name: Print actor name
+        run: echo "ACTOR_NAME: ${ACTOR_NAME}"
       
       
