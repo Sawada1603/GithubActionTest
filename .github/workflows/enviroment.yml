@@ -5,8 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
         ACTOR: ${{ github.actor }}
+        USER: ${{ vars.USERNAME }}
+        PASSWORD: ${{ vars.PASSWORD }}
     steps:
       - name: Print actor name
         run: echo "${ACTOR}"
+      - name: Print user name
+        run: echo "${USER}"
+      - name: Print password
+        run: echo "${USER}"
       
       
