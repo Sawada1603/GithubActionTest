@@ -13,6 +13,6 @@ jobs:
       - name: Print user name
         run: echo "${USER}"
       - name: Print password
-        run: echo "${USER}"
+        run: echo "${PASSWORD}"
       
       
